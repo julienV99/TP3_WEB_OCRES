@@ -47,7 +47,7 @@ function getThreeDayForecast() {
     const data = response.data;
 
 
-    for (value i = 0; i < 4; i++) 
+    for (let i = 0; i < 4; i++) 
     {
       const main = data.list[i].weather[0].main;
       const description = data.list[i].weather[0].description;
