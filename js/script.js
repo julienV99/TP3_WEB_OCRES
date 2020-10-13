@@ -39,6 +39,7 @@ function getThreeDayForecast() {
   const city = document.getElementById("city-input").value;
 
   const apiWeather = new API_WEATHER(city);
+
   apiWeather
       .fetchTodayForecast()
   .then(function(response) {
@@ -46,7 +47,7 @@ function getThreeDayForecast() {
     const data = response.data;
 
 
-    for (let i = 0; i < 4; i++) 
+    for (value i = 0; i < 4; i++) 
     {
       const main = data.list[i].weather[0].main;
       const description = data.list[i].weather[0].description;
