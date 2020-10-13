@@ -66,5 +66,6 @@ function getThreeDayForecast() {
           // Affiche une erreur
           console.error(error);
       });
+      
   return city;
 }
